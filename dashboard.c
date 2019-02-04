@@ -1,33 +1,41 @@
-// Testing 
-#include "constant.h"
+// CoastPloy - Small Business Management System
+// CPloy for short.
+// Build 00001 - pre-alpha-development
+// Not for Profit - Free Open Source Software
+// Concept and Developed by Terry Jones
+// Email: tedzjones@protonmail.ch
+/* Feel free to use my idea, edit it, change it. 
+But please credit me if anything I have done has 
+inspired you in any way */
+// Designed to work on Linux based operating systems.
+// Standard Headers
 #include <stdio.h>
-#include <string.h>
+// Include the database headers
 
+// Include any custom headers
+
+// Display dashboard - main function
 int main()
 {
-    //variables
-    int selection;
-    printf("Current Service Prices\n. Select an Option: \n");
-    printf("1. Linux Installation\n");
-    printf("2. Windows Installation or Troubleshooting\n");
-    printf("3. Standard Call Out Fee\n");
-    printf("4. Remote Assistance Fee\n");
-    scanf(" %d", &selection);
-        if (selection == 1)
-        {
-            printf("Linux Install Price is: $%.2f\n", servicelinux);
+// variables
+int option;
+
+// display options for user selection
+printf("Welcome to CoastPloy Business Management System\n");
+printf("Options:\n");
+printf("(F1) Employee\n");
+printf("(F2) Customer\n");
+printf("(F3) Supplier\n");
+printf("(F4) Sales\n");
+printf("(F5) Training\n");
+// Option needs to only be visible to admin users not normal users
+printf("(F6) Admin\n");
+printf("(ESC) Logoff\n")
+printf("Please input an option: ");
+// getcha() possibly here - wait for input then act.
+scanf(&option);
+    if &option == // F1 Need it to capture keyboard input 
+        { 
+            // Move to Employe Dashboard if true
         }
-        else if (selection == 2)
-        {
-            printf("Windows Install Price is: $%.2f\n", servicewindows);
-        }
-        else if (selection == 3)
-        {
-            printf("Standard Call Out Fee is: $%.2f\n", calloutfee);
-        }
-        else if (selection == 4)
-        {
-            printf("Remote Assist Rate is: $%.2f\n", remoteassist);
-        }
-return 0;
 }
